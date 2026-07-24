@@ -1,7 +1,6 @@
 # 编译产物
 *.exe
 *.o
-*.out
 *.obj
 
 # XMUOJ 构建目录
