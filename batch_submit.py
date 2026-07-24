@@ -27,7 +27,7 @@ from getpass import getpass
 # ============================================================
 BASE_URL = "http://xmuoj.com"
 CONTEST_DIR = Path(__file__).parent / "contest-362"  # 实验目录
-INTERVAL = 2  # 每道题提交间隔（秒）
+INTERVAL = 0.3  # 每道题提交间隔（秒）
 
 # ============================================================
 # 工具函数
@@ -214,50 +214,59 @@ def main():
     if not login(session):
         return
 
-    # 逐题提交
+    # 逐题提交（极速模式：只提交不等结果）
     print()
     print("=" * 50)
-    print("  开始批量提交")
+    print("  批量提交中（极速模式）")
     print("=" * 50)
     print()
 
-    results = []
+    submissions = []  # { display_id, title, submission_id }
+    errors = []
     for i, problem in enumerate(problems):
         display_id = problem["meta"]["displayId"]
         title = problem["meta"]["title"]
-        print(f"[{i+1}/{len(problems)}] {display_id} {title} ... ", end="", flush=True)
-
         result = submit_one(session, problem, contest_password)
         if not result["ok"]:
-            print(f"❌ {result['error']}")
-            results.append({"display_id": display_id, "title": title, "error": result["error"]})
+            print(f"  [{i+1:2d}/{len(problems)}] {display_id:12s} ❌ {result['error']}")
+            errors.append({"display_id": display_id, "title": title, "error": result["error"]})
         else:
-            sid = result["submission_id"]
-            print(f"已提交 (sid={sid}) ", end="", flush=True)
-            # 等待结果
-            final = wait_for_result(session, sid)
+            print(f"  [{i+1:2d}/{len(problems)}] {display_id:12s} ✅ 已提交 #{result['submission_id']}")
+            submissions.append({"display_id": display_id, "title": title, "submission_id": result["submission_id"]})
+        time.sleep(INTERVAL)
+
+    # 等待所有结果
+    if submissions:
+        print()
+        print(f"⏳ 等待 {len(submissions)} 道题的判题结果...")
+        results = []
+        for i, sub in enumerate(submissions):
+            print(f"  [{i+1:2d}/{len(submissions)}] {sub['display_id']:12s} ... ", end="", flush=True)
+            final = wait_for_result(session, sub["submission_id"])
             if final:
                 label = final.get("result_label", "?")
                 icon = "✅" if label == "Accepted" else "❌"
-                print(f"→ {icon} {label}")
-                results.append({"display_id": display_id, "title": title, "result": label})
+                print(f"{icon} {label}")
+                results.append({**sub, "result": label})
             else:
-                print(f"→ ⏳ 等待超时")
-                results.append({"display_id": display_id, "title": title, "result": "超时"})
-
-        time.sleep(INTERVAL)
+                print("⏳ 超时（可在网站查看）")
+                results.append({**sub, "result": "?"})
+            time.sleep(0.2)
 
     # 汇总
+    all_results = results + [{"display_id": e["display_id"], "title": e["title"], "result": e["error"]} for e in errors]
     print()
     print("=" * 50)
     print("  提交结果汇总")
     print("=" * 50)
-    ac_count = sum(1 for r in results if r.get("result") == "Accepted")
-    for r in results:
-        icon = "✅" if r.get("result") == "Accepted" else ("❌" if r.get("error") else "⏳")
+    ac_count = sum(1 for r in all_results if r.get("result") == "Accepted")
+    for r in all_results:
+        icon = "✅" if r.get("result") == "Accepted" else ("❌" if "result" not in r or r.get("error") else "⏳")
+        if r.get("error"):
+            icon = "❌"
         detail = r.get("result") or r.get("error", "?")
         print(f"  {icon} [{r['display_id']}] {r['title']} — {detail}")
-    print(f"\n  总计: {len(results)} 题 | AC: {ac_count} | 非 AC: {len(results) - ac_count}")
+    print(f"\n  总计: {len(all_results)} 题 | AC: {ac_count} | 非 AC: {len(all_results) - ac_count}")
 
 
 if __name__ == "__main__":
