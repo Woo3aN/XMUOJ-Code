@@ -1,11 +1,6 @@
-# 编译产物
-*.exe
+# 中间编译产物（非必要）
 *.o
-*.out
 *.obj
-
-# XMUOJ 构建目录
-.xmuoj-build/
 
 # IDE 文件
 .vscode/
