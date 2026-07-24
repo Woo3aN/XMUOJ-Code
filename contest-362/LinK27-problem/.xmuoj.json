@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "baseUrl": "http://xmuoj.com",
+  "problemId": 7490,
+  "contestId": 362,
+  "contestTitle": "2026年程序设计实践例题(05李胜睿班)",
+  "displayId": "LinK27",
+  "title": "大数排序",
+  "language": "C++",
+  "sourceFile": "main.cpp",
+  "sourceFiles": {
+    "C++": "main.cpp"
+  },
+  "createdAt": "2026-07-09T11:28:30.153Z"
+}

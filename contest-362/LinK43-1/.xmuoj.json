@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "baseUrl": "http://xmuoj.com",
+  "problemId": 7506,
+  "contestId": 362,
+  "contestTitle": "2026年程序设计实践例题(05李胜睿班)",
+  "displayId": "LinK43",
+  "title": "求二进制中1的个数",
+  "language": "C++",
+  "sourceFile": "main.cpp",
+  "sourceFiles": {
+    "C++": "main.cpp"
+  },
+  "createdAt": "2026-07-06T10:02:47.341Z"
+}

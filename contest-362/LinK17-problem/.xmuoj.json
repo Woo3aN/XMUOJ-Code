@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "baseUrl": "http://xmuoj.com",
+  "problemId": 7480,
+  "contestId": 362,
+  "contestTitle": "2026年程序设计实践例题(05李胜睿班)",
+  "displayId": "LinK17",
+  "title": "递归求波兰表达式",
+  "language": "C",
+  "sourceFile": "main.c",
+  "sourceFiles": {
+    "C": "main.c"
+  },
+  "createdAt": "2026-07-02T16:27:14.919Z"
+}
