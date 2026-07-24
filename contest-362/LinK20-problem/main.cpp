@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
- 
-const int N = 30;
- 
+
+const int N = 50;
+
 int n,m;
 int path[N];
 void dfs(int u,int start)
@@ -23,11 +23,11 @@ void dfs(int u,int start)
         }
     }
 }
- 
+
 int main()
 {
   cin>>n>>m;
   dfs(1,1);
- 
+
   return 0;
 }
