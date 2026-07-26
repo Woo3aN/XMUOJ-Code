@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "baseUrl": "http://xmuoj.com",
+  "problemId": 8323,
+  "contestId": 374,
+  "contestTitle": "集训队试炼01 DP基础入门",
+  "displayId": "JDII138",
+  "title": "网格DP·摘取花生",
+  "language": "C++",
+  "sourceFile": "main.cpp",
+  "sourceFiles": {
+    "C++": "main.cpp"
+  },
+  "createdAt": "2026-07-26T12:34:41.190Z"
+}

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "baseUrl": "http://xmuoj.com",
+  "problemId": 8326,
+  "contestId": 374,
+  "contestTitle": "集训队试炼01 DP基础入门",
+  "displayId": "JDII192",
+  "title": "线性DP·飞笺传讯",
+  "language": "C++",
+  "sourceFile": "main.cpp",
+  "sourceFiles": {
+    "C++": "main.cpp"
+  },
+  "createdAt": "2026-07-26T14:59:03.759Z"
+}

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "baseUrl": "http://xmuoj.com",
+  "problemId": 8324,
+  "contestId": 374,
+  "contestTitle": "集训队试炼01 DP基础入门",
+  "displayId": "JDII139",
+  "title": "网格DP·通行费",
+  "language": "C++",
+  "sourceFile": "main.cpp",
+  "sourceFiles": {
+    "C++": "main.cpp"
+  },
+  "createdAt": "2026-07-26T12:50:38.218Z"
+}

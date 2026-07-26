@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "baseUrl": "http://xmuoj.com",
+  "problemId": 8325,
+  "contestId": 374,
+  "contestTitle": "集训队试炼01 DP基础入门",
+  "displayId": "JDII191",
+  "title": "网格DP·方格双取",
+  "language": "C++",
+  "sourceFile": "main.cpp",
+  "sourceFiles": {
+    "C++": "main.cpp"
+  },
+  "createdAt": "2026-07-26T13:58:11.299Z"
+}
