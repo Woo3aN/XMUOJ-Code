@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "baseUrl": "http://xmuoj.com",
+  "problemId": 8264,
+  "contestId": 373,
+  "contestTitle": "2026年蓝桥杯集训之动态规划大全",
+  "displayId": "JDII120",
+  "title": "线性DP·数字三角",
+  "language": "C++",
+  "sourceFile": "main.cpp",
+  "sourceFiles": {
+    "C++": "main.cpp"
+  },
+  "createdAt": "2026-07-26T03:52:40.880Z"
+}

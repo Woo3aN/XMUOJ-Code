@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "baseUrl": "http://xmuoj.com",
+  "problemId": 8322,
+  "contestId": 374,
+  "contestTitle": "集训队试炼01 DP基础入门",
+  "displayId": "JDII120",
+  "title": "线性DP·数字三角",
+  "language": "C++",
+  "sourceFile": "main.cpp",
+  "sourceFiles": {
+    "C++": "main.cpp"
+  },
+  "createdAt": "2026-07-26T04:07:02.976Z"
+}
