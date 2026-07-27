@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "baseUrl": "http://xmuoj.com",
+  "problemId": 7521,
+  "contestId": 362,
+  "contestTitle": "2026年程序设计实践例题(05李胜睿班)",
+  "displayId": "LinK58",
+  "title": "Dijkstra求最短路(2)",
+  "language": "C++",
+  "sourceFile": "main.cpp",
+  "sourceFiles": {
+    "C++": "main.cpp"
+  },
+  "createdAt": "2026-07-27T06:17:14.397Z"
+}

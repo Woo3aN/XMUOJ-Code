@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "baseUrl": "http://xmuoj.com",
+  "problemId": 7495,
+  "contestId": 362,
+  "contestTitle": "2026年程序设计实践例题(05李胜睿班)",
+  "displayId": "LinK32",
+  "title": "查找指定数",
+  "language": "C++",
+  "sourceFile": "main.cpp",
+  "sourceFiles": {
+    "C++": "main.cpp"
+  },
+  "createdAt": "2026-07-27T03:43:20.533Z"
+}
