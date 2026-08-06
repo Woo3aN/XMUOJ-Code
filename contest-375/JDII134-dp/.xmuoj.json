@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "baseUrl": "http://xmuoj.com",
+  "problemId": 8336,
+  "contestId": 375,
+  "contestTitle": "集训队试炼02 线性DP",
+  "displayId": "JDII134",
+  "title": "线性DP·防御阵列",
+  "language": "C++",
+  "sourceFile": "main.cpp",
+  "sourceFiles": {
+    "C++": "main.cpp"
+  },
+  "createdAt": "2026-08-02T12:55:59.060Z"
+}

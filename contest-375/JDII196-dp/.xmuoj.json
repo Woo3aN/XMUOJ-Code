@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "baseUrl": "http://xmuoj.com",
+  "problemId": 8333,
+  "contestId": 375,
+  "contestTitle": "集训队试炼02 线性DP",
+  "displayId": "JDII196",
+  "title": "线性DP·友好城邦",
+  "language": "C++",
+  "sourceFile": "main.cpp",
+  "sourceFiles": {
+    "C++": "main.cpp"
+  },
+  "createdAt": "2026-08-02T13:31:41.210Z"
+}

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "baseUrl": "http://xmuoj.com",
+  "problemId": 8330,
+  "contestId": 375,
+  "contestTitle": "集训队试炼02 线性DP",
+  "displayId": "JDII195",
+  "title": "DP·合唱列阵",
+  "language": "C++",
+  "sourceFile": "main.cpp",
+  "sourceFiles": {
+    "C++": "main.cpp"
+  },
+  "createdAt": "2026-08-02T15:04:49.398Z"
+}

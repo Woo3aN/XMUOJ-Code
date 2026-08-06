@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "baseUrl": "http://xmuoj.com",
+  "problemId": 8327,
+  "contestId": 375,
+  "contestTitle": "集训队试炼02 线性DP",
+  "displayId": "JDII129",
+  "title": "线性DP·最长升序",
+  "language": "C++",
+  "sourceFile": "main.cpp",
+  "sourceFiles": {
+    "C++": "main.cpp"
+  },
+  "createdAt": "2026-08-02T11:55:55.997Z"
+}
