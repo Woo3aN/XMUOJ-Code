@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "baseUrl": "http://xmuoj.com",
+  "problemId": 8357,
+  "contestId": 376,
+  "contestTitle": "集训队试炼03 背包DP专题",
+  "displayId": "JDII215",
+  "title": "背包·能量奇石",
+  "language": "C++",
+  "sourceFile": "main.cpp",
+  "sourceFiles": {
+    "C++": "main.cpp"
+  },
+  "createdAt": "2026-08-16T12:44:45.939Z"
+}

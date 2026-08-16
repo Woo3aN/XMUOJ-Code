@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "baseUrl": "http://xmuoj.com",
+  "problemId": 8350,
+  "contestId": 376,
+  "contestTitle": "集训队试炼03 背包DP专题",
+  "displayId": "JDII200",
+  "title": "分组背包·机阵分派",
+  "language": "C++",
+  "sourceFile": "main.cpp",
+  "sourceFiles": {
+    "Java": "Main.java",
+    "C++": "main.cpp"
+  },
+  "createdAt": "2026-08-16T11:42:09.170Z"
+}
