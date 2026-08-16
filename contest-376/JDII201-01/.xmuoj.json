@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "baseUrl": "http://xmuoj.com",
+  "problemId": 8338,
+  "contestId": 376,
+  "contestTitle": "集训队试炼03 背包DP专题",
+  "displayId": "JDII201",
+  "title": "01背包·精装巧纳",
+  "language": "C++",
+  "sourceFile": "main.cpp",
+  "sourceFiles": {
+    "C++": "main.cpp"
+  },
+  "createdAt": "2026-08-16T03:37:21.771Z"
+}
